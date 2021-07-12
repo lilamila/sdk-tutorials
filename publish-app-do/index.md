@@ -214,7 +214,9 @@ To upload the files, you can use `scp` to avoid a few extra steps.
 
     `scp -r digitalocean appuser@<IP address>:/home/appuser/`
 
-    This command uploads your local `digitalocean` app to your home directory on your DigitalOcean Droplet, `/home/appuser`. 
+    This command uploads your local `digitalocean` app to your home directory on your DigitalOcean Droplet, `/home/appuser`. Note that if you have named your app something other than `digitalocean` you should run the command with that name instead:
+    
+    `scp -r <App> appuser@<IP address>:/home/appuser/`
 
 ## Install your app
 
